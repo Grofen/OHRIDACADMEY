@@ -1,0 +1,138 @@
+<html>
+<head>
+  <title>Ohrid Academy - Home Page</title>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/semantic.css">
+</head>
+<style>
+body
+{
+  background-color: #FFF !important;
+  margin:0px;
+}
+</style>
+<body>
+<div id="main">
+  <div id="main_left">
+      <a href="/"><img style="width:80px; margin-right:10px;"  class="ui middle aligned tiny image"  src="images/logo.png"></a><span id="oh">UIST Academy</span>
+      </div>
+      <div id="main_right">
+        <div class="ui huge menu">
+        <div class="right menu">
+          <a href="/" class="active item">
+          Home
+          </a>
+          <a href="courses.html" class="item">
+          Courses
+          </a>
+        <div class="item">
+          <div onClick="login();" class="ui primary button">Logout</div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+      <div style="clear:both;"></div>
+
+
+<br>
+<br>
+
+  <div style="padding-left:150px;padding-right:150px;" id="content">
+
+    <div class="ui floating dropdown labeled search icon button">
+    <i class="world icon"></i>
+    <span class="text">Select Language</span>
+    <div class="menu">
+      <div class="item">English</div>
+      <div class="item">Turkish</div>
+      <div class="item">Macedonian</div>
+      <div class="item">Albanian</div>
+      <div class="item">Spanish</div>
+    </div>
+  </div>
+  <div class="ui aligned right aligned dropdown labeled search icon button">
+  <i class="world icon"></i>
+  <span class="text">Select Faculty</span>
+  <div class="menu">
+    <div class="item">English</div>
+    <div class="item">Turkish</div>
+    <div class="item">Macedonian</div>
+    <div class="item">Albanian</div>
+    <div class="item">Spanish</div>
+  </div>
+</div>
+
+    <h2 class="ui header">
+      <img class="ui image" src="http://semantic-ui.com/images/icons/school.png">
+      <div class="content">
+        Courses
+      </div>
+    </h2>
+    <div class="ui center aligned segment">
+      <h2 class="ui center aligned icon header">
+        <img src="images/cse.png"></i>
+        Computer Science & Engineering
+      </h2>
+    </div>
+
+    <div class="ui center aligned segment">
+      <div class="ui four doubling special cards">
+        <div class="card">
+          <div class="blurring dimmable image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button">Take the Course</div>
+                </div>
+              </div>
+            </div>
+            <img src="http://semantic-ui.com/images/avatar/large/jenny.jpg">
+          </div>
+          <div class="content">
+            <a class="header">C programming</a>
+            <div class="meta">
+              <span class="date">Create in Sep 2016</span>
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              <i class="users icon"></i>
+              2 Members
+            </a>
+          </div>
+        </div>
+
+      </div>
+</div>
+
+  </div>
+
+</div>
+
+
+
+
+
+</body>
+<script src="assets/jquery-3.1.1.min.js"></script>
+<script src="assets/semantic.js"></script>
+<script type="text/javascript">
+$('.ui.dropdown').dropdown();
+$('.special.cards .image').dimmer({
+  on: 'hover'
+});
+
+function login()
+{
+  $('.ui.modal.login').modal('show');
+}
+
+function register()
+{
+  $('.ui.modal.register').modal('show');
+}
+
+
+</script>
+</html>

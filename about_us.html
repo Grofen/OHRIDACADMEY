@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Ohrid Academy - Login Page</title>
+  <title>Ohrid Academy - About Us</title>
   <link rel="stylesheet" type="text/css" href="assets/style.css">
   <link rel="stylesheet" type="text/css" href="assets/semantic.css">
 </head>
@@ -12,14 +12,14 @@
       <div id="main_right">
         <div class="ui huge menu">
         <div class="right menu">
-          <a href="/" class="active item">
+          <a href="/" class="item">
           Home
           </a>
-          <a href="about_us.html" class="item">
+          <a href="about_us.html" class="active item">
           About Us
           </a>
         <div class="item">
-          <div onClick="login();" class="ui primary button">Login</div>
+          <div onClick="login();"  class="ui primary button">Login</div>
         </div>
         </div>
         </div>
@@ -27,24 +27,15 @@
 
   <div id="cover">
 
-    <div id="cover_t">
-    <div id="text_cover">Welcome to UIST Academy</div>
-    <div style="font-size:20px;" id="text_cover">Online Student Support Academy</div>
-    <br>
-    <button class="ui facebook button">
-  <i class="facebook icon"></i>
-  Login with Facebook
-</button>
-    <br>
-    <br>
-    <div onClick="register();" style="position:relative; z-index:999;" class="ui primary button">Sing Up</div>
+    <div style="padding-left:150px; padding-right:150px;padding-top:50px;" id="cover_t">
+      <div class="ui segment">
+    <p>About Us</p>
+  </div>
   </div>
 
 </div>
 
 </div>
-
-
 
 <!-- Login Page Modal-->
 
@@ -126,8 +117,6 @@
   </div>
 </div>
 
-
-
 </body>
 <script src="assets/jquery-3.1.1.min.js"></script>
 <script src="assets/semantic.js"></script>
@@ -143,7 +132,6 @@ function register()
 {
   $('.ui.modal.register').modal('show');
 }
-
 
 </script>
 </html>
