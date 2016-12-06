@@ -1,123 +1,12 @@
-/*body
-{
-  background-color: #212d37 !important;
-  margin:0px;
-}
-
-.ui.menu {
-    border-radius: 0px !important;
-}
-
-.ui.menu {
-    border:0px !important;
-    box-shadow: none !important;
-    border-radius: 0px !important;
-    background: none !important;
-    color:#fff !important;
-}
-
-.ui.menu .active.item {
-    background: rgba(0, 0, 0, 0.05);
-    color: rgba(0, 0, 0, 0.95);
-    font-weight: normal;
-    box-shadow: none;
-}
-
-.ui.menu .item {
-    background: rgba(0, 0, 0, 0.05);
-    color: #fff !important;
-    font-weight: normal;
-    box-shadow: none;
-}
-
-#main
-{
-  width: 100%;
-  height: 110px;
-  padding-top: 20px;
-  background-color: #212d37;
-  -webkit-box-shadow: 0px 12px 22px -8px rgba(0,0,0,0.28);
-  -moz-box-shadow: 0px 12px 22px -8px rgba(0,0,0,0.28);
-  box-shadow: 0px 12px 22px -8px rgba(0,0,0,0.28);
-}
-
-
-#main_left
-{
-  width: 40%;
-  float: left;
-  padding-left:200px;
-}
-
-#main_right
-{
-  width: 60%;
-  float: left;
-  padding-left:150px;
-}
-
-#oh
-{
-  font-family: Calibri;
-  	font-size: 26px;
-  	font-style: normal;
-  	font-variant: small-caps;
-  	font-weight: 100;
-  color:#fff;
-  line-height: 19.2px;
-}
-
-#cover
-{
-    background-image: url(../images/cover.jpg);
-    text-align: center;
-    height: 700px;
-    margin-top:90px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    position: relative;
-}
-
-#cover_t
-{
-
-  background-color: #000;
-  opacity: 0.7;
-  position: relative;
-  z-index:999;
-  padding-top:40px;
-  height:100%;
-}
-
-#text_cover
-{
-  margin-top: 10px;
-  position: relative;
-  z-index: 999;
-  color: #fff;
-  font-size:29px;
-}
-
-#cover_t p
-{
-  font-size:20px;
-}
-
-#content
-{
-  
-}
-*/
-
 /* START */
 body {
   background-color: #e9eaea !important;
   font-family: "Oxygen","Oxygen","Segoe UI","Helvetica Neue",sans-serif;
+  box-sizing: border-box;
 }
 
-
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
 
 /* HEADER */
 .ui.secondary.pointing.menu {
@@ -134,6 +23,35 @@ body {
   color: #204056 !important;
   font-size: 16px;
 }
+/* HEADER ENDS */
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/* BODY STARTS */
+.fullscreen-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  background-color: #204056;
+  opacity: 0.5;
+}
+.fullscreen-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*width: 1466.67px;
+  height: 825px;*/
+  max-width: 100%;
+  opacity: 0.9;
+}
+.signup-section {
+  display: block;
+}
 h1.ui.header {
   text-align: center;
   font-weight: 300;
@@ -147,9 +65,18 @@ h3.ui.header {
   color: #959696;
   font-weight: normal;
 }
-.ui.input.signup{
+.row {
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: block;
-  padding-left: 39%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+.ui.input.signup{
+  display: block; 
 }
 .ui.input .input-signup {
   border: 1px solid #e9eaea !important;
@@ -165,9 +92,7 @@ h3.ui.header {
   font-size: 18px;
 }
 .signup-button-container {
-  padding-left: 39%;
-  margin-top: 20px;
-  margin-bottom: 50px; 
+  margin-top: 20px; 
 }
 #signup-button:hover {
   background-color: #204056;
@@ -185,28 +110,19 @@ h3.ui.header {
   border-radius: 0px !important;
   background-image: none;
 }
-/* HEADER ENDS */
+/* BODY ENDS */
 
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------*/
 
 /* FOOTER STARTS */
 #footer-container {
   margin-top: 50px;
   margin-bottom: -5px;
+  background-color: #d4d5d6;
 }
 .info {
-  background-color: #d4d5d6;
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  padding-left: 150px;
-  padding-right: 150px;
- /* margin: 1rem 0em;*/
 }
 .info > .info-elem {
   -webkit-box-flex: 1;
@@ -224,6 +140,9 @@ h3.ui.header {
 .info-elem a {
   color: #204056;
 }
+.footer-a {
+  text-align: left;
+}
 #follow i {
   color: #204056;
   box-shadow: 0em 0em 0em 0.1em #204056 inset;
@@ -236,17 +155,46 @@ h3.ui.header {
   margin-top: 1px;
   line-height: 1;
   height: 0em;
-  font-weight: bold;
-  text-transform: uppercase;
   letter-spacing: 0.05em;
   color: rgba(0, 0, 0, 0.85);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+.footer-width {
+  padding: 2em 5em;
+}
 /* FOOTER ENDS */
+
+#categories {
+  margin-top: 100px;
+}
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+ 
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1039px) {
+  .footer-width {
+    padding: 2em 3em;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  
+}
+
 
 /* END */
 
