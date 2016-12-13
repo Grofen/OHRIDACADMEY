@@ -1,0 +1,137 @@
+<html>
+<head>
+  <title>Ohrid Academy - About Us</title>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/semantic.css">
+</head>
+<body>
+<div id="main">
+  <div id="main_left">
+      <a href="/"><img style="width:80px; margin-right:10px;"  class="ui middle aligned tiny image"  src="images/logo.png"></a><span id="oh">UIST Academy</span>
+      </div>
+      <div id="main_right">
+        <div class="ui huge menu">
+        <div class="right menu">
+          <a href="/" class="item">
+          Home
+          </a>
+          <a href="about_us.html" class="active item">
+          About Us
+          </a>
+        <div class="item">
+          <div onClick="login();"  class="ui primary button">Login</div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+  <div id="cover">
+
+    <div style="padding-left:150px; padding-right:150px;padding-top:50px;" id="cover_t">
+      <div class="ui segment">
+    <p>About Us</p>
+  </div>
+  </div>
+
+</div>
+
+</div>
+
+<!-- Login Page Modal-->
+
+<div style="padding-right:150px; padding-left:150px;" class="ui modal login">
+  <i class="close icon"></i>
+  <div class="header">
+    Student Login
+  </div>
+  <div class="ui segment">
+    <form class="ui form">
+      <div class="field">
+        <label>Username</label>
+        <input type="text" name="first-name" placeholder="First Name">
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input type="password" name="last-name" placeholder="Last Name">
+      </div>
+      <div class="field">
+        <div class="ui checkbox">
+          <input type="checkbox" tabindex="0" class="hidden">
+          <label>I agree to the Terms and Conditions</label>
+        </div>
+      </div>
+      <button class="ui positive button">
+        Login
+      </button>
+    </form>
+  </div>
+  <div class="actions">
+    <div class="ui black deny button">
+      Cancel
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Register Page Modal-->
+
+<div style="padding-right:150px; padding-left:150px;" class="ui modal register">
+  <i class="close icon"></i>
+  <div class="header">
+    Registration
+  </div>
+  <div class="ui segment">
+    <form class="ui form">
+      <div class="field">
+        <label>Name and Surname</label>
+        <input type="password" name="last-name" placeholder="Name and Surname">
+      </div>
+      <div class="field">
+        <label>Username</label>
+        <input type="text" name="first-name" placeholder="Username">
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <input type="text" name="first-name" placeholder="Email">
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input type="password" name="last-name" placeholder="Password">
+      </div>
+      <div class="field">
+        <div class="ui checkbox">
+          <input type="checkbox" tabindex="0" class="hidden">
+          <label>I agree to the Terms and Conditions</label>
+        </div>
+      </div>
+      <button class="ui positive button">
+        Register
+      </button>
+    </form>
+  </div>
+  <div class="actions">
+    <div class="ui black deny button">
+      Cancel
+    </div>
+  </div>
+</div>
+
+</body>
+<script src="assets/jquery-3.1.1.min.js"></script>
+<script src="assets/semantic.js"></script>
+<script type="text/javascript">
+$('.ui.dropdown').dropdown();
+
+function login()
+{
+  $('.ui.modal.login').modal('show');
+}
+
+function register()
+{
+  $('.ui.modal.register').modal('show');
+}
+
+</script>
+</html>

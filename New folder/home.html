@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SS</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/prism.css">
+  	<link rel="stylesheet" type="text/css" href="assets/semantic.css">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+</head>
+
+
+<!-- HEADER STARTS -->
+<header>
+
+
+	<div class="ui secondary top fixed pointing menu">
+
+		<!-- <a href="" class="item">Courses<i class="dropdown icon"></i></a>
+		<a class="item"><i class="search icon"></i></a> -->
+		<!-- <a href="index.html" class="item ui center aligned segment" id="logo">OHRIDACADEMY</a> -->
+
+	  	<div class="right menu">
+    		<a class="ui item">Log In / Sign Up</a>
+	  	</div>
+
+
+
+	</div>
+</header>
+<!-- HEADER ENDS -->
+
+<div style="margin-top:10px; background-color:#1B1C1D;" class="ui left fixed vertical menu">
+  <br>
+  <br>
+<div class="item">
+  <img class="ui avatar image" src="images/profile.jpg"> Muro
+</div>
+<a class="item"><i style="margin-top:-5px;" class="home large icon"></i>Home</a>
+<a class="item">Courses<i style="margin-top:-5px;" class="large student icon"></i></a>
+<a class="item">Settings<i style="margin-top:-5px;" class="settings large icon"></i></a>
+</div>
+<p></p>
+<p></p>
+
+<body ng-app="" style="padding-left:120px;">
+
+  <div style="padding-left:120px; padding-top:70px;" class="container">
+		<a id="notification_code" style="position:relative;float:right;margin-right:70px; background-color: rgba(32,64,86,0.8) !important;" class="ui red label"><i class="large code icon"></i>Share your code with other Students!</a>
+		<div style="width:57%;" class="ui  segment">
+			<div class="ui large labels">
+			<button class="ui inverted black_b button">Feed</button>
+			<button class="ui inverted black_b button">C & C++</button>
+			<button class="ui inverted black_b button">HTML</button>
+			<button class="ui inverted black_b button">CSS</button>
+			<button class="ui inverted black_b button">PHP</button>
+			<button class="ui inverted black_b button">SQL</button>
+			<button class="ui inverted black_b button">Ruby</button>
+	   </div>
+	  </div>
+
+		<div style="width:57%;" class="ui padded segment shar">
+			<div class="ui dimmer">
+	 <div class="ui indeterminate text loader">Parsing</div>
+ </div>
+			<div id="share">
+	        <div class="ui form">
+	            <div class="field">
+	                <textarea class="shares" ng-model="myTextarea" onchange="detect_code()"  style="width:100%; height:10px !important; min-height: 4em !important; max-height: auto !important;" id="shares" placeholder="Paste your code or write something" name="status">{{myTextarea}}</textarea>
+							</div>
+	        </div>
+
+	    </div>
+			<br>
+<div id="code_button" class="ui inverted black_b button code" data-position="right center" tabindex="0">
+  <div class="visible content">Share</div>
+</div>
+
+<div id="text_button" class="ui inverted black_b button" data-content="Share now!" data-position="right center" tabindex="0">
+<div class="visible content">Share</div>
+</div>
+
+<div id="p_lang" class="ui compact selection dropdown">
+  <i class="dropdown icon"></i>
+  <div class="menu">
+    <div class="item">C</div>
+    <div class="item">C++</div>
+    <div class="item">HTML</div>
+		<div class="item">CSS</div>
+		<div class="item">PHP</div>
+		<div class="item">SQL</div>
+  </div>
+</div>
+</div>
+		<h3 class="ui dividing header"></h3>
+
+
+		<div style="padding-left:10px;" class="ui feed">
+		  <div class="event">
+		    <div class="label">
+		      <img src="images/profile.jpg">
+		    </div>
+		    <div class="content">
+		      <div class="date">
+		        3 days ago
+		      </div>
+		      <div class="summary">
+		         <a>Mohammad Grofen</a> posted a code line
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div style="width:550px; margin-left:10px;" class="ui very padded segment">
+<pre><code class="language-java" id="code_segment">if (Build.VERSION.SDK_INT >= 19) {
+    // chromium, enable hardware acceleration
+    webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+} else {
+    // older android version, disable hardware acceleration
+    webView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+}</code></pre>
+<div class="meta">
+  <a style="color:#204056 !important" class="like">
+    <i class="like icon"></i> 4 Likes
+  </a>
+</div>
+		<div class="ui comments">
+  <h3 class="ui dividing header">Comments</h3>
+  <div class="comment">
+    <a class="avatar">
+      <img src="images/profile.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Sami</a>
+      <div class="metadata">
+        <span class="date">Today at 5:42PM</span>
+      </div>
+      <div class="text">
+        Cool Bro!
+      </div>
+      <div class="actions">
+        <a class="reply">Helpful</a>
+      </div>
+    </div>
+  </div>
+  <div class="comment">
+    <a class="avatar">
+      <img src="images/profile.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Elliot Fu</a>
+      <div class="metadata">
+        <span class="date">Yesterday at 12:30AM</span>
+      </div>
+      <div class="text">
+        <p>This has been very useful for my research. Thanks as well!</p>
+      </div>
+      <div class="actions">
+            <a class="reply">Helpful</a>
+      </div>
+    </div>
+  </div>
+  <form class="ui  reply form">
+    <div class="field">
+      <textarea></textarea>
+    </div>
+    <div class="ui blue labeled submit icon button">
+      <i class="icon edit"></i> Add Reply
+    </div>
+  </form>
+</div>
+	</div>
+
+	</div>
+
+
+	<div class="ui modal">
+
+	  <i class="close icon"></i>
+	  <div class="header">
+    Question or Explanation
+	  </div>
+	<div class="ui grid">
+	  <div class="four wide column"></div>
+	  <div class="eight wide column">
+	      <form>
+	      <div class="ui form">
+
+	  <div class="field">
+			<br>
+	    <label>Share the problems in your code with other developers</label>
+	    <textarea name="status"></textarea>
+	  </div>
+	</div>
+
+	  </div>
+	  <div class="one wide column"></div>
+	</div>
+	  <div class="actions">
+    <button class="ui inverted black_b positive button">Share!</button>
+	  </div>
+	  </form>
+	</div>
+
+</body>
+
+
+<!-- FOOTER STARTS -->
+
+
+<!-- FOOTER ENDS -->
+
+<script src="assets/jquery-3.1.1.min.js"></script>
+<script src="assets/script.js"></script>
+<script src="assets/angular.min.js"></script>
+<script src="assets/semantic.js"></script>
+<script src="assets/languages.js"></script>
+<script src="assets/prism.js"></script>
+<script type="text/javascript">
+$('.ui.modal').modal('attach events', '.button.code', 'show');
+$("#p_lang").hide();
+$("#code_button").hide();
+$("#notification_code").hide();
+
+hljs.configure({
+  tabReplace: '    ',
+  classPrefix: 'shares'
+                      // … other options aren't change
+})
+
+	$('.ui.dropdown').dropdown();
+  $('.ui.labeled.icon.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');
+</script>
+</html>
