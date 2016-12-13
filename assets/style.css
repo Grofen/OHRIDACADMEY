@@ -146,6 +146,20 @@ body {
 #service {
   margin: 20px 0px;
 }
+.feature {
+  margin: 5rem 0rem !important;
+}
+.card-imgs {
+ background-color: #FFFFFF !important;
+}
+.card-icon {
+  padding: 2rem 8rem;
+  color: #204056;
+}
+.cards-header {
+  text-align: center;
+  color: #000 !important;
+}
 /* BODY ENDS */
 
 /*-----------------------------------------------------------------------------------------------------------------*/
@@ -173,37 +187,24 @@ body {
   font-family: 'Oxygen', sans-serif !important;
   padding: 1rem;
 }
-.info-elem a {
-  color: #204056;
+.footer-a a {
+  color: #204056 !important;
 }
 .footer-a {
   text-align: left;
-}
-#follow i {
   color: #204056;
-  box-shadow: 0em 0em 0em 0.1em #204056 inset;
 }
-#follow i:hover {
+.footer-a i {
+  color: #204056;
+  box-shadow: 0em 0em 0em 0.1em #204056 inset !important;
+}
+.footer-a i:hover {
   background-color: #204056;
   color: #FFF;
 }
-#divider {
-  margin-top: 1px;
-  line-height: 1;
-  height: 0em;
-  letter-spacing: 0.05em;
-  color: rgba(0, 0, 0, 0.85);
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.footer-width {
-  padding: 2em 5em;
-}
-/* FOOTER ENDS */
-#categories {
-  margin-top: 100px;
-}
 .footer-header {
   text-align: left;
+  color: #204056;
 }
 #footer-row {
   padding: 3rem 5rem;
@@ -212,6 +213,11 @@ body {
   background-color: #d4d5d6;
   margin-top: 5rem;
 }
+/* FOOTER ENDS */
+#categories {
+  margin-top: 100px;
+}
+
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 
