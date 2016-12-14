@@ -153,8 +153,13 @@ body {
  background-color: #FFFFFF !important;
 }
 .card-icon {
-  padding: 2rem 8rem;
   color: #204056;
+  text-align:center;
+  padding: 2rem 0rem;
+}
+.icon- {
+  display: inline-block;
+  width: 100%;
 }
 .cards-header {
   text-align: center;
@@ -243,13 +248,14 @@ body {
 }
 .patternOverlay {
   z-index: -1;
-  background-color: #1c416a;
+  /*background-color: #1c416a;*/
+  background-color: #3b5998;
   position: absolute;
   top: 0;
   left: 0;
   height: 300px;
   width: 100%;
-  opacity: 0.5;
+  /*opacity: 0.5;*/
 }
 .courses-elem-container {
   /*margin-top: 50px;
@@ -395,10 +401,14 @@ body {
     display: block;
     width: 100%;
   }
+  .card-col {
+    display: block !important;
+    width: 100% !important;
+  }
 }
 
 /********** Extra small devices only **********/
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .ui.secondary.pointing.menu {
     padding-left: 0px;
     padding-right: 0px;
