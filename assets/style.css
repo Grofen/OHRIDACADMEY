@@ -1,17 +1,21 @@
 /* START */
 body {
-  background-color: #e9eaea !important;
-  font-family: "Oxygen","Oxygen","Segoe UI","Helvetica Neue",sans-serif;
+  background-color: #FFFFFF !important;
+  font-family: "Oxygen","Oxygen","Segoe UI","Helvetica Neue",sans-serif !important;
   box-sizing: border-box;
 }
 
+h1, h2, h3, .content > .header {
+  font-family: "Oxygen","Oxygen","Segoe UI","Helvetica Neue",sans-serif !important;
+  color: #1fab54 !important;
+}
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 /* HEADER */
 .ui.secondary.pointing.menu {
   z-index: 999;
-  background-color: #FFFFFF !important;
+  background-color: #1fab54 !important;
   height: 50px;
   padding-left: 150px;
   padding-right: 150px;
@@ -22,7 +26,7 @@ body {
   font-weight: bold !important;
   padding-bottom: 17px !important;
   font-family: Montserrat !important;
-  color: #204056 !important;
+  color: #FFFFFF !important;
   font-size: 16px;
 }
 /* HEADER ENDS */
@@ -31,6 +35,9 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 /* BODY STARTS */
+.container {
+
+}
 .fullscreen-container {
   position: relative;
   top: 0;
@@ -79,7 +86,7 @@ body {
   font-weight: bold;
 }
 #singup-header {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   text-align: center;
   font-weight: normal;
 }
@@ -92,6 +99,10 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+#feature-header {
+  text-align: left;
+  text-decoration: underline;
 }
 .ui.input.signup{
   display: block; 
@@ -114,7 +125,7 @@ body {
 }
 #signup-button:hover {
   background-color: #FFFFFF;
-  color: #204056;
+  color: #1fab54;
   border-radius: 0px !important;
 }
 .fg-logo {
@@ -129,7 +140,7 @@ body {
   background-image: none;
 }
 .about-backg {
-  background-color: #FFFFFF;
+  background-color: #FAFAFA;
   margin: 20px 0px;
 }
 .about-width {
@@ -150,10 +161,10 @@ body {
   margin: 5rem 0rem !important;
 }
 .card-imgs {
- background-color: #FFFFFF !important;
+ background-color: #1fab54 !important;
 }
 .card-icon {
-  color: #204056;
+  color: #FFFFFF;
   text-align:center;
   padding: 2rem 0rem;
 }
@@ -165,48 +176,16 @@ body {
   text-align: center;
   color: #000 !important;
 }
+.cards-container {
+  /*border: none !important;
+  box-shadow: none !important;*/
+}
 /* BODY ENDS */
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
 
 /* FOOTER STARTS */
-#footer-container {
-  margin-top: 50px;
-  margin-bottom: -5px;
-  background-color: #d4d5d6;
-}
-.info {
-  display: -webkit-box;
-}
-.info > .info-elem {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-  flex: 1 1 auto;
-  -ms-flex: 1 1 0px;
-  /* Solves #2550 MS Flex */
-  margin: 0em;
-  min-width: 0px;
-  background-color: transparent;
-  color: #204056;
-  font-family: 'Oxygen', sans-serif !important;
-  padding: 1rem;
-}
-.footer-a a {
-  color: #204056 !important;
-}
-.footer-a {
-  text-align: left;
-  color: #204056;
-}
-.footer-a i {
-  color: #204056;
-  box-shadow: 0em 0em 0em 0.1em #204056 inset !important;
-}
-.footer-a i:hover {
-  background-color: #204056;
-  color: #FFF;
-}
 .footer-header {
   text-align: left;
   color: #204056;
@@ -215,13 +194,23 @@ body {
   padding: 3rem 5rem;
 }
 #footer {
-  background-color: #d4d5d6;
+  background-color: #1fab54;
   margin-top: 5rem;
 }
-/* FOOTER ENDS */
-#categories {
-  margin-top: 100px;
+#footer *, a {
+  color: #FFFFFF !important;
+  text-align: left;
 }
+#footer i {
+  box-shadow: #FFFFFF;
+  text-align: center;
+  box-shadow: 0em 0em 0em 0.1em #FFFFFF inset !important;
+}
+#footer i:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+/* FOOTER ENDS */
 
 /*-----------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------*/
@@ -401,10 +390,13 @@ body {
     display: block;
     width: 100%;
   }
-  /*.card-col {
-    display: block !important;
+  .card-col {
+    /*display: block !important;*/
     width: 100% !important;
-  }*/
+  }
+  #footer-col-1, #footer-col-2, #footer-col-3, #footer-col-4{
+    margin-bottom: 10px;
+  }
 }
 
 /********** Extra small devices only **********/
@@ -423,6 +415,9 @@ body {
   .info-elem {
     display: block;
     width: 100%;
+  }
+  .footer-header, .footer-a {
+    text-align: center;
   }
 }
 
@@ -448,7 +443,6 @@ body {
     width: 100%;
   }
 }
-
 
 /* END */
 
