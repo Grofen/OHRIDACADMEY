@@ -401,10 +401,10 @@ body {
     display: block;
     width: 100%;
   }
-  .card-col {
-    /*display: block !important;*/
+  /*.card-col {
+    display: block !important;
     width: 100% !important;
-  }
+  }*/
 }
 
 /********** Extra small devices only **********/
