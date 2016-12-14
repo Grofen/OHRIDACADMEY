@@ -402,7 +402,7 @@ body {
     width: 100%;
   }
   .card-col {
-    display: block !important;
+    /*display: block !important;*/
     width: 100% !important;
   }
 }
