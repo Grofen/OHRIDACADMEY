@@ -25,221 +25,205 @@
 
 
 <body>
-  <div class="container">
-    <section class="courses-img-container">
-        <div class="patternOverlay"></div>
-        <h1 class="ui header page-headers-h1" id="courses-h1">Courses</h1>
-        <!-- <img src="images/inner-bg.jpg" id="courses-img"> -->
-    </section>
-    <section class="sorting">
-      <div class="ui grid">
-        <div class="sixteen wide column">
-          <!-- <div class="ui segment"> -->
-            <div class="ui menu" id="sorting-menu">
-              <div class="ui fluid selection dropdown item">
-                <span class="default text">Courses</span>
-                <i class="dropdown icon"></i>
-                <div class="menu">
-                  <a class="item">Web development</a>
-                  <a class="item">Languages</a>
-                  <a class="item">API</a>
-                </div>
-              </div>
-              <div class="right menu">
-                <div class="ui dropdown item">Sorted by
-                  <i class="dropdown icon"></i>
-                  <div class="menu">
-                    <a class="item">None</a>
-                    <a class="item">Most popular</a>
-                    <a class="item">recently posted</a>
-                  </div>
-                </div>
+  <section class="ui grid row" id="backg-h">
+   <div class="sixteen wide column">
+     <h1 id="courses-h1">Courses</h1>
+   </div>
+   <div class="sixteen wide column">
+      <div class="ui secondary  menu">
+        <div class="ui fluid search selection dropdown">
+          <input type="hidden" name="">
+          <i class="dropdown icon"></i>
+          <div class="default text">Courses</div>
+          <div class="menu">
+            <div class="item">Web Development</div>
+            <div class="item">Languages</div>
+            <div class="item">Tools</div>
+            <div class="item">APIs</div>
+          </div>
+        </div>
+        <div class="right menu">
+          <div class="ui selection dropdown">
+            <input type="hidden" name="">
+            <i class="dropdown icon"></i>
+            <div class="default text">Sorted by</div>
+            <div class="menu">
+              <div class="item" data-value="1">recently posted</div>
+              <div class="item" data-value="1">recently posted</div>
+              <div class="item" data-value="1">recently posted</div>
+            </div> 
+          </div>
+        </div>
+     </div>
+   </div>
+  </section>
+  <div class="doubling stackable column ui grid container cards-grid">
+    <div class="four column row">
+      <div class="column doubling stackable">
+          <div class="ui card cards-container">
+            <div class="image card-imgs">
+              <div class="card-icon">
+                <img src="images/svg/HTML&CSS.svg">
               </div>
             </div>
-          <!-- </div> -->  
+            <div class="content">
+              <a class="header cards-header">work on real project</a>
+              <div class="description">
+                Kristy is an art director living in New York.
+              </div>
+            </div>
+            <div class="extra content">Estimated 10 hours</div>
+          </div>
+      </div>
+      <div class="column doubling stackable">
+        <div class="ui card cards-container">
+          <div class="image card-imgs">
+            <div class="card-icon">
+              <img src="images/svg/JS.svg">
+            </div>
+          </div>
+          <div class="content">
+            <a class="header cards-header">work on real project</a>
+            <div class="description">
+              Kristy is an art director living in New York.
+            </div>
+          </div>
+          <div class="extra content">Estimated 10 hours</div>
         </div>
       </div>
-    </section>
-    <section class="courses-elem-container">
-      <div class="cards-border">
-        <div class="HTML-card">
-          <a href="" class="HTML-a">
-            <div class="cards-container">
-              <div class="cards-backg">
-                <div class="svg-logo">
-                  <svg viewBox="0 0 70.54 80" width="64" height="64" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" data-reactid="73"><title data-reactid="74">Web Icon</title><path d="M0,0,6.42,72l28.81,8,28.89-8L70.54,0ZM60,68.59,35.23,75.47,10.5,68.61,4.77,4.36h61Z" data-reactid="75"></path><polygon points="17.55 39.19 48.56 39.19 47.18 54.63 35.33 57.87 34.65 57.7 23.31 54.63 22.72 48.07 18.35 48.07 19.23 57.96 35.23 62.41 51.25 57.96 53.32 34.83 21.54 34.83 20.33 21.31 54.52 21.31 54.92 16.95 15.57 16.95 17.55 39.19" data-reactid="76"></polygon></svg>
-                </div>
-                <div class="description">
-                  <div class="cards-header">Learn HTML5 &amp; CSS</div>
-                  <div class="about-cards" style="display: block;">Learn the fundamentals of HTML &amp; CSS.</div>
-                </div>
-                <dir class="cards-footer">Estimated 10 hours</dir>
-              </div>
+      <div class="column doubling stackable">
+        <div class="ui card cards-container">
+          <div class="image card-imgs">
+            <div class="card-icon">
+              <img src="images/svg/JAVA.svg">
             </div>
-          </a>
-        </div>
-      </div>  
-
-
-      <div class="cards-border">  
-        <div class="HTML-card">
-          <a href="" class="HTML-a">
-            <div class="cards-container">
-              <div class="cards-backg">
-                <div class="svg-logo">
-                  <svg viewBox="0 0 70.46 80" width="64" height="64" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title"><title>Java Icon</title><polygon points="13.46 54.93 16.93 57.41 16.93 62.63 25.54 69.73 44.71 69.73 44.71 64.57 27.39 64.57 23.22 61.13 47.33 61.13 47.33 55.97 23.82 55.97 21.08 54.02 19.58 56.12 21.08 54.02 18.98 52.53 47.33 52.53 47.33 47.37 20.23 47.37 15.14 44.33 15.14 43.91 20.67 41.15 18.36 36.53 9.98 40.72 9.98 47.25 13.46 49.33 13.46 54.93"></polygon><polygon points="52.47 60.41 56.12 64.06 67.31 52.88 67.31 47.27 62.32 42.28 54.3 42.28 54.3 47.44 60.18 47.44 62.15 49.4 62.15 50.74 52.47 60.41"></polygon><polygon points="68.9 71.48 58.33 74.84 13.93 74.84 5.63 72.2 14.31 69.45 12.75 64.53 0 68.58 0 75.83 13.13 80 59.13 80 70.46 76.4 68.9 71.48"></polygon><polygon points="36.12 35.71 26.62 26.21 41.25 11.59 41.25 0 36.09 0 36.09 9.45 19.32 26.21 32.47 39.36 36.12 35.71"></polygon><polygon points="43.65 35.78 40.25 39.19 43.9 42.84 50.95 35.78 41.35 26.18 49.95 17.57 46.3 13.93 34.05 26.18 43.65 35.78"></polygon></svg>
-                </div>
-                <div class="description">
-                  <div class="cards-header">Learn Java</div>
-                  <div class="about-cards" style="display: block;">Learn the fundamentals of HTML &amp; CSS.</div>
-                </div>
-                <dir class="cards-footer">Estimated 10 hours</dir>
-              </div>
+          </div>
+          <div class="content">
+            <a class="header cards-header">work on real project</a>
+            <div class="description">
+              Kristy is an art director living in New York.
             </div>
-          </a>
-        </div>
-      </div>  
-
-
-      <div class="cards-border">
-        <div class="HTML-card">
-          <a href="" class="HTML-a">
-            <div class="cards-container">
-              <div class="cards-backg">
-                <div class="svg-logo">
-                  <svg viewBox="0 0 80 80" width="64" height="64" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title"><title>JQuery Icon</title><polygon points="65.91 80 37.06 80 0 42.94 0 14.1 9.66 4.44 13.47 8.24 5.39 16.33 5.39 40.71 39.29 74.61 63.67 74.61 71.76 66.53 75.56 70.34 65.91 80"></polygon><polygon points="65.91 53.39 50.37 53.39 26.61 29.63 26.61 9.66 34.05 2.22 37.86 6.03 32 11.89 32 27.4 52.6 48 63.67 48 71.76 39.92 75.56 43.73 65.91 53.39"></polygon><polygon points="74.78 26.77 63.67 26.77 53.23 16.33 53.23 5.22 58.45 0 62.26 3.81 58.61 7.46 58.61 14.1 65.91 21.39 72.55 21.39 76.19 17.74 80 21.55 74.78 26.77"></polygon></svg>
-                </div>
-                <div class="description">
-                  <div class="cards-header">Learn JQuery</div>
-                  <div class="about-cards" style="display: block;">Learn the fundamentals of HTML &amp; CSS.</div>
-                </div>
-                <dir class="cards-footer">Estimated 10 hours</dir>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>  
-
-
-      <div class="cards-border">
-        <div class="HTML-card">
-          <a href="" class="HTML-a">
-            <div class="cards-container">
-              <div class="cards-backg">
-                <div class="svg-logo">
-                  <svg viewBox="0 0 66.92 80" width="64" height="64" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title"><title>SQL Icon</title><path d="M46.94,0H20L0,6.81V29.87l20,6.81h27l20-6.81V6.81ZM20.79,4.81H46.15L57.07,8.53,46.14,12.26H20.78L9.85,8.53ZM62.12,26.43h0L46.14,31.87H20.78l-16-5.44V11.89l.06,0L20,17.07h27l15.18-5.17Z"></path><polygon points="62.12 48.5 62.08 48.51 46.13 53.94 20.78 53.94 4.81 48.5 4.81 36.51 0 34.88 0 51.94 19.99 58.75 46.94 58.75 66.92 51.94 66.92 34.88 62.12 36.51 62.12 48.5"></polygon><polygon points="62.12 69.75 62.08 69.76 46.13 75.19 20.78 75.19 4.81 69.75 4.81 57.76 0 56.13 0 73.19 19.99 80 46.94 80 66.92 73.19 66.92 56.13 62.12 57.76 62.12 69.75"></polygon></svg>
-                </div>
-                <div class="description">
-                  <div class="cards-header">Learn SQL server</div>
-                  <div class="about-cards" style="display: block;">Learn SQL server.</div>
-                </div>
-                <dir class="cards-footer">Estimated 10 hours</dir>
-              </div>
-            </div>
-          </a>
+          </div>
+          <div class="extra content">Estimated 10 hours</div>
         </div>
       </div>
-        
-
-      <div class="cards-border">
-        <div class="HTML-card">
-          <a href="" class="HTML-a">
-            <div class="cards-container">
-              <div class="cards-backg">
-                <div class="svg-logo">
-                  <svg viewBox="0 0 75.19 80" width="64" height="64" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title"><title>Angular JS</title><path d="M37.6,0,0,13.65,5.68,62.39,37.6,80,69.51,62.39l5.68-48.73ZM65.44,59.65,37.6,75,9.75,59.65l-5-43.07L37.6,4.64,70.46,16.58Z"></path><path d="M17.45,57.68h5.49l4.55-11H48.86l4.55,11h5.49L38.17,11.77ZM29.32,42.27,38.17,20.9,47,42.27Z"></path></svg>
-                </div>
-                <div class="description">
-                  <div class="cards-header">Learn Angular.js</div>
-                  <div class="about-cards" style="display: block;">Learn Angular.js .</div>
-                </div>
-                <dir class="cards-footer">Estimated 10 hours</dir>
-              </div>
+      <div class="column doubling stackable">
+        <div class="ui card cards-container">
+          <div class="image card-imgs">
+            <div class="card-icon">
+            <img src="images/svg/ANGULAR.svg">
             </div>
-          </a>
-        </div>
-      </div>  
-
-
-      <div class="cards-border">
-        <div class="HTML-card">
-          <a href="" class="HTML-a">
-            <div class="cards-container">
-              <div class="cards-backg">
-                <div class="svg-logo">
-                  <svg viewBox="0 0 80 80" width="64" height="64" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title"><title>Javascript Icon</title><path d="M0,0V80H80V0ZM75.2,75.2H4.8V4.8H75.2Z"></path><path id="_Path_" data-name="&lt;Path&gt;" d="M62.34,63.7a6.26,6.26,0,0,1-1.95,1,9.19,9.19,0,0,1-9.83-3c-.2-.24-.39-.49-.57-.75l-3.86,2.24a11.78,11.78,0,0,0,3.62,3.63A13.9,13.9,0,0,0,56,68.9a16.17,16.17,0,0,0,6.86-.65A8.67,8.67,0,0,0,68,64.31,9.12,9.12,0,0,0,69,59.24a8.46,8.46,0,0,0-3.25-6.61,24.34,24.34,0,0,0-5.53-3.13L59.11,49c-1-.43-2-.88-3-1.38a9.48,9.48,0,0,1-2.14-1.48,4.69,4.69,0,0,1-1.25-4.42,4.44,4.44,0,0,1,3.18-3.3,6.5,6.5,0,0,1,3.41,0,6,6,0,0,1,3.48,2.48l3.58-2.3a8.92,8.92,0,0,0-4-3.36,12.64,12.64,0,0,0-7.86-.51A8.25,8.25,0,0,0,49,38.63a8.72,8.72,0,0,0-1.08,5.15,8.46,8.46,0,0,0,2.75,6,18.43,18.43,0,0,0,5.05,3.07l.94.42c1.35.6,2.75,1.22,4.11,1.88a8,8,0,0,1,2,1.45,4.66,4.66,0,0,1-.49,7.13Z"></path><path id="_Path_2" data-name="&lt;Path&gt;" d="M24,68a12.84,12.84,0,0,0,9.26.33,7.43,7.43,0,0,0,5-5,13.89,13.89,0,0,0,.64-4.61V34.79h-4.8v4.16q0,9.84,0,19.68a14.68,14.68,0,0,1-.16,2.17,4.44,4.44,0,0,1-2.25,3.53,6,6,0,0,1-6.07-.25,6.74,6.74,0,0,1-2-2.2l-.14-.22L19.55,64A9.41,9.41,0,0,0,24,68Z"></path></svg>
-                </div>
-                <div class="description">
-                  <div class="cards-header">Learn JavaScript</div>
-                  <div class="about-cards" style="display: block;">Learn JavaScript.</div>
-                </div>
-                <dir class="cards-footer">Estimated 10 hours</dir>
-              </div>
+          </div>
+          <div class="content">
+            <a class="header cards-header">work on real project</a>
+            <div class="description">
+              Kristy is an art director living in New York.
             </div>
-          </a>
+          </div>
+          <div class="extra content">Estimated 10 hours</div>
         </div>
       </div>
-        
-
-      <div class="cards-border">
-        <div class="HTML-card">
-          <a href="" class="HTML-a">
-            <div class="cards-container">
-              <div class="cards-backg">
-                <div class="svg-logo">
-                  <svg viewBox="0 0 100 46.58" width="64" height="64" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title"><title>PHP Icon</title><path d="M18.05,36.22a14.77,14.77,0,0,0,10.73-4.09,16.63,16.63,0,0,0,5-12.29c0-5.93-3.28-9-10-9.46H7.15L0,46.58H5.51l2-10.37ZM11.89,14h8c4.75,0,7.82,2.49,7.82,6.34v.11c-.57,9.73-5.66,11.6-10.57,12.14H8.79Z"></path><path d="M65,17.54a5.15,5.15,0,0,0-.77-4.33c-1.25-1.63-3.78-2.61-7.3-2.84H45.78L47.75,0H42.22L35.06,36.21h5.52L45,14h9c1.3,0,3.16.16,4.27,1.51s.81,3.41.55,4.71l-3,16h6Z"></path><path d="M84.23,36.22A14.79,14.79,0,0,0,95,32.12a16.63,16.63,0,0,0,5-12.29c0-5.93-3.28-9-10-9.46H73.33L66.17,46.58h5.51l2-10.37ZM78.07,14h8c4.75,0,7.82,2.49,7.82,6.34v.11c-.57,9.73-5.67,11.6-10.57,12.14H75Z"></path></svg>
-                </div>
-                <div class="description">
-                  <div class="cards-header">Learn PHP</div>
-                  <div class="about-cards" style="display: block;">Learn PHP.</div>
-                </div>
-                <dir class="cards-footer">Estimated 10 hours</dir>
-              </div>
+    </div>
+    <div class="four column row">
+      <div class="column doubling stackable">
+        <div class="ui card cards-container">
+          <div class="image card-imgs">
+            <div class="card-icon">
+            <img src="images/svg/GIT.svg">
             </div>
-          </a>
-        </div>
-      </div>  
-
-
-      <div class="cards-border">
-        <div class="HTML-card">
-          <a href="" class="HTML-a">
-            <div class="cards-container">
-              <div class="cards-backg">
-                <div class="svg-logo">
-                  <svg viewBox="0 0 102.65 80" width="64" height="64" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title"><title>Ruby Icon</title><path d="M102.65,22.67,89.33,9.33H84l-14.67,16-10.67-20H76V0H26.78L14.67,8,0,22.67v16L41.31,80h20l41.33-41.33Zm-97.33,8h28l8,41.33-36-36Zm33.35,0H64l-8,44H46.67Zm30.65,0h28V36l-36,36ZM76,25.33,86.67,14.67,97.31,25.33Zm-37.33,0,10.65-20h4L64,25.33Zm-5.35,0L20,10.67l8-5.33H44Zm-6.67,0H5.33L16,14.67Z"></path></svg>
-                </div>
-                <div class="description">
-                  <div class="cards-header">Learn Ruby</div>
-                  <div class="about-cards" style="display: block;">Learn Ruby.</div>
-                </div>
-                <dir class="cards-footer">Estimated 10 hours</dir>
-              </div>
+          </div>
+          <div class="content">
+            <a class="header cards-header">work on real project</a>
+            <div class="description">
+              Kristy is an art director living in New York.
             </div>
-          </a>
+          </div>
+          <div class="extra content">Estimated 10 hours</div>
         </div>
-      </div>  
-
-
-      <div class="cards-border">
-        <div class="HTML-card">
-          <a href="" class="HTML-a">
-            <div class="cards-container">
-              <div class="cards-backg">
-                <div class="svg-logo">
-                  <svg viewBox="0 0 80 80" width="64" height="64" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title"><title>Python Icon</title><path d="M71.13,20.13H59.87V8.87L51,0H29L20.13,8.87V20.13H8.87L0,29V51l8.87,8.87H20.13V71.13L29,80H51l8.87-8.87V59.87H71.13L80,51V29ZM10.75,55.35,4.53,49.13V30.87l6.22-6.22H40V20.13H24.65V10.75l6.22-6.22H49.13l6.22,6.22V28.91L46.6,37.74H31.52L20.13,49.13v6.22Zm64.72-6.22-6.22,6.22H40v4.53H55.35v9.38l-6.22,6.22H30.87l-6.22-6.22V51l8.74-8.74h15.1l11.38-11.5V24.65h9.38l6.22,6.22Z"></path><rect x="30.19" y="9.81" width="4.53" height="5.03"></rect><rect x="45.28" y="65.16" width="4.53" height="5.03"></rect></svg>
-                </div>
-                <div class="description">
-                  <div class="cards-header">Learn Python</div>
-                  <div class="about-cards" style="display: block;">Learn Python.</div>
-                </div>
-                <dir class="cards-footer">Estimated 10 hours</dir>
-              </div>
+      </div>
+      <div class="column doubling stackable">
+        <div class="ui card cards-container">
+          <div class="image card-imgs">
+            <div class="card-icon">
+            <img src="images/svg/JQUERY.svg">
             </div>
-          </a>
+          </div>
+          <div class="content">
+            <a class="header cards-header">work on real project</a>
+            <div class="description">
+              Kristy is an art director living in New York.
+            </div>
+          </div>
+          <div class="extra content">Estimated 10 hours</div>
         </div>
-      </div>  
-    </section>
+      </div>
+      <div class="column doubling stackable">
+        <div class="ui card cards-container">
+          <div class="image card-imgs">
+            <div class="card-icon">
+            <img src="images/svg/PHP.svg">
+            </div>
+          </div>
+          <div class="content">
+            <a class="header cards-header">work on real project</a>
+            <div class="description">
+              Kristy is an art director living in New York.
+            </div>
+          </div>
+          <div class="extra content">Estimated 10 hours</div>
+        </div>
+      </div>
+      <div class="column doubling stackable">
+        <div class="ui card cards-container">
+          <div class="image card-imgs">
+            <div class="card-icon">
+            <img src="images/svg/PYTHON.svg">
+            </div>
+          </div>
+          <div class="content">
+            <a class="header cards-header">work on real project</a>
+            <div class="description">
+              Kristy is an art director living in New York.
+            </div>
+          </div>
+          <div class="extra content">Estimated 10 hours</div>
+        </div>
+      </div>
+    </div>
+    <div class="four column row">  
+      <div class="column doubling stackable">
+        <div class="ui card cards-container">
+          <div class="image card-imgs">
+            <div class="card-icon">
+            <img src="images/svg/RUBY.svg">
+            </div>
+          </div>
+          <div class="content">
+            <a class="header cards-header">work on real project</a>
+            <div class="description">
+              Kristy is an art director living in New York.
+            </div>
+          </div>
+          <div class="extra content">Estimated 10 hours</div>
+        </div>
+      </div>
+      <div class="column doubling stackable">
+        <div class="ui card cards-container">
+          <div class="image card-imgs">
+            <div class="card-icon">
+            <img src="images/svg/SQL.svg">
+            </div>
+          </div>
+          <div class="content">
+            <a class="header cards-header">work on real project</a>
+            <div class="description">
+              Kristy is an art director living in New York.
+            </div>
+          </div>
+          <div class="extra content">Estimated 10 hours</div>
+        </div>
+      </div>
+    </div>  
   </div>
 </body>
 
