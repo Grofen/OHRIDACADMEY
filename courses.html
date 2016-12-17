@@ -12,7 +12,7 @@
 
 <!-- HEADER STARTS -->
 <header>
-  <div class="ui secondary top fixed pointing menu">
+  <div class="ui secondary top fixed pointing menu" id="navbar">
     <!-- <a href="" class="item">Courses<i class="dropdown icon"></i></a>
     <a class="item"><i class="search icon"></i></a> -->
     <a href="index.html" class="item ui center aligned segment" id="logo">UISTACADEMY</a>
@@ -29,9 +29,9 @@
    <div class="sixteen wide column">
      <h1 id="courses-h1">Courses</h1>
    </div>
-   <div class="sixteen wide column">
+   <div class="sixteen wide column" id="sorting-menu">
       <div class="ui secondary  menu">
-        <div class="ui fluid search selection dropdown">
+        <div class="ui fluid search selection dropdown courses-dropdown">
           <input type="hidden" name="">
           <i class="dropdown icon"></i>
           <div class="default text">Courses</div>
@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="right menu">
-          <div class="ui selection dropdown">
+          <div class="ui selection dropdown courses-dropdown">
             <input type="hidden" name="">
             <i class="dropdown icon"></i>
             <div class="default text">Sorted by</div>
@@ -279,13 +279,13 @@
       </div>
     </section>
     <div id="divider"></div>
-  <section class="ui grid info" id="copright">
-    <div class="row">
-      <div class="eight wide column">
-        <a href="">Privacy Policy</a><span> | </span><a href=""> Terms</a>
+  <section class="ui two column centered grid container info" id="copright">
+    <div class="eight column row">
+      <div class="four wide column">
+        <a class="footer-a">Privacy Policy</a><span> | </span><a class="footer-a"> Terms</a>
       </div>
-      <div class="eight wide column">
-        <span>© 2016 UISTAccdemy</span>
+      <div class="four wide column">
+        <span class="footer-a">© 2016 UISTAccdemy</span>
       </div>
     </div>
   </section>
@@ -298,5 +298,18 @@
 <script type="text/javascript">
 $('.ui.dropdown').dropdown();
 $('.ui.menu').popup();
+var myNav = document.getElementById('navbar');
+window.onscroll = function () { 
+    "use strict";
+    if (document.body.scrollTop >= 50 ) {
+      myNav.classList.add("nav-colored");
+      myNav.classList.remove("nav-transparent");
+      
+    } 
+    else {
+      myNav.classList.add("nav-transparent");      
+      myNav.classList.remove("nav-colored");  
+    }
+};
 </script>
 </html>

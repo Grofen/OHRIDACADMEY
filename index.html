@@ -12,14 +12,41 @@
 
 <!-- HEADER STARTS -->
 <header>
+<div class="ui five wide column grid container">
 	<div class="ui secondary top fixed pointing menu" id="navbar">
 		<!-- <a href="" class="item">Courses<i class="dropdown icon"></i></a>
 		<a class="item"><i class="search icon"></i></a> -->
 		<a href="index.html" class="item ui center aligned segment" id="logo">UISTACADEMY</a>
 	  	<div class="right menu">
-    		<a href="courses.html" class="ui item">Log In / Sign Up</a>
+    		<a href="courses.html" class="ui item test">Log In / Sign Up</a>
 	  	</div>
 	</div>
+	<div class="ui inverted test modal">
+	  <i class="close icon"></i>
+	  <div class="header">
+	    Profile Picture
+	  </div>
+	  <div class="image content">
+	    <div class="ui medium image">
+	      <img src="/images/avatar/large/chris.jpg">
+	    </div>
+	    <div class="description">
+	      <div class="ui header">We've auto-chosen a profile image for you.</div>
+	      <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+	      <p>Is it okay to use this photo?</p>
+	    </div>
+	  </div>
+	  <div class="actions">
+	    <div class="ui black deny button">
+	      Nope
+	    </div>
+	    <div class="ui positive right labeled icon button">
+	      Yep, that's me
+	      <i class="checkmark icon"></i>
+	    </div>
+	  </div>
+	</div>
+</div>
 </header>
 <!-- HEADER ENDS -->
 
@@ -92,7 +119,7 @@
 					  <div class="card-icon"><i class="bug huge icon icon-"></i></div>
 					</div>
 					<div class="content">
-					  <a class="header cards-header">work on real project</a>
+					  <a class="header cards-header">fix problems</a>
 					  <div class="description">
 					    Kristy is an art director living in New York.
 					  </div>
@@ -105,7 +132,7 @@
 					  <div class="card-icon"><i class="users huge icon icon-"></i></div>
 					</div>
 					<div class="content">
-					  <a class="header cards-header">work on real project</a>
+					  <a class="header cards-header">share with friends</a>
 					  <div class="description">
 					    Kristy is an art director living in New York.
 					  </div>
@@ -198,12 +225,12 @@
     		</div>
     	</div>
     </section>
-	<section class="ui grid info" id="copright">
-		<div class="row">
-			<div class="eight wide column">
+	<section class="ui two column centered grid container info" id="copright">
+		<div class="eight column row">
+			<div class="four wide column">
 				<a class="footer-a">Privacy Policy</a><span> | </span><a class="footer-a"> Terms</a>
 			</div>
-			<div class="eight wide column">
+			<div class="four wide column">
 				<span class="footer-a">© 2016 UISTAccdemy</span>
 			</div>
 		</div>
@@ -215,7 +242,7 @@
 <script src="assets/semantic.js"></script>
 <script src="assets/script.js"></script>
 <script type="text/javascript">
-	$('.ui.dropdown').dropdown();
+$('.ui.dropdown').dropdown();
 	// $(window).on("scroll", function() {
 	//     if($(window).scrollTop() > 825) {
 	//         $("#navbar").addClass("active");
@@ -225,5 +252,18 @@
 	//        $("#navbar").removeClass("active");
 	//     }
 	// });
+$('.test.modal').modal('set active', '.test', 'show');
+var myNav = document.getElementById('navbar');
+window.onscroll = function () { 
+    "use strict";
+    if (document.body.scrollTop >= 580 ) {
+    	myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+    } 
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
+};
 </script>
 </html>
